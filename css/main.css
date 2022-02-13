@@ -1,0 +1,532 @@
+@font-face {
+    font-family: Catamaran;
+    font-weight: 700;
+    font-style: normal;
+    src: url("../font/catamaran/Catamaran-Bold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: Catamaran;
+    font-weight: 900;
+    font-style: normal;
+    src: url("../font/catamaran/Catamaran-Black.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: Muli;
+    font-weight: 300;
+    font-style: normal;
+    src: url("../font/muli/Muli-Light.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: Muli;
+    font-weight: 400;
+    font-style: normal;
+    src: url("../font/muli/Muli-Regular.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: Muli;
+    font-weight: 600;
+    font-style: normal;
+    src: url("../font/muli/Muli-SemiBold.ttf") format("truetype")
+}
+
+@font-face {
+    font-family: Muli;
+    font-weight: 700;
+    font-style: normal;
+    src: url("../font/muli/Muli-Bold.ttf") format("truetype")
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f6f6;
+    color: #565656;
+
+    font: 300 18px/1.8 Muli;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 1920px;
+    margin: 0 0;
+}
+
+.container-layout {
+    width: 1680px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+.vhidden {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    border: none;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* Первый блок */
+.home {
+    height: 1079px;
+    background: #2e5386 radial-gradient(#4474a4, #2e5386) 0 0 / cover;
+    color: #fefefe;
+}
+
+/* Шапка */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 130px;
+}
+
+/* Навигация */
+.nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list__item {
+    display: inline-block;
+    margin-left: 43px;
+}
+
+.nav-list__link {
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-list__link:hover {
+    text-decoration: underline;
+}
+
+/* Промо блок */
+.promo {
+    padding-top: 35px;
+}
+
+.promo__heading {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Catamaran;
+    font-weight: 900;
+}
+
+.promo__subtitle {
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    margin: 0 0 10px 0;
+    opacity: 0.4;
+}
+
+.promo__title {
+    margin: 0;
+    font-size: 250px;
+    line-height: 1;
+    font-weight: inherit;
+    letter-spacing: -14px;
+    background-image: linear-gradient(90deg, #4278b9, #69b3d0, #4278b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0.8;
+}
+
+.promo__description {
+    background: url("../img/promo-bg.png") no-repeat right bottom;
+    height: 725px;
+    padding-top: 210px;
+
+    position: relative;
+    z-index: 2;
+    margin-top: -110px;
+}
+
+.promo__text {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+
+    border-radius: 6px;
+    background-color: #ff690f;
+    font-family: Catamaran;
+    font-weight: 700;
+    color: #fefefe;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn_promo {
+    font-size: 18px;
+    padding: 20px 45px;
+}
+
+.btn_offer {
+    font-size: 15px;
+    padding: 13px 20px;
+}
+
+/* Заголовки */
+.section-title {
+    font: 900 60px/1.2 Catamaran;
+    color: #2f2f2f;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.section-title_contact {
+    color: #ffffff;
+}
+
+/* Секция офферов */
+.offer {
+    text-align: center;
+    padding-top: 92px;
+    padding-bottom: 160px;
+}
+
+.offer__title {
+    margin-top: 0;
+    margin-bottom: 49px;
+}
+
+.offer__description {
+    letter-spacing: 0.18px;
+    margin-bottom: 72px;
+}
+
+/* Список офферов */
+.offer-list {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Оффер */
+.offer-item {
+    text-transform: uppercase;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offer-item__img {
+    margin-bottom: 44px;
+}
+
+.offer-item__subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: auto;
+}
+
+.offer-item__title {
+    font: 900 24px/1.2 Catamaran;
+    letter-spacing: 0.24px;
+    color: #2f2f2f;
+    margin: 0 0 30px 0;
+}
+
+/* Галерея */
+.gallery-list {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 1265px;
+}
+
+.gallery-list__item {
+    max-width: 33.33%;
+}
+
+.gallery-list__photo {
+    vertical-align: top;
+}
+
+/* Секция инструкторов */
+.instructor {
+    text-align: center;
+    padding-top: 160px;
+    padding-bottom: 165px;
+}
+
+.instructor__title {
+    margin-top: 0;
+    margin-bottom: 63px;
+}
+
+/* Список инструкторов */
+.instructor-list {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Инструктор */
+.instructor-item {
+    text-transform: uppercase;
+}
+
+.instructor-item__img {
+    border-radius: 50%;
+    margin-bottom: 32px;
+    vertical-align: top;
+}
+
+.instructor-item__post {
+    font-size: 14px;
+    margin: 0 0 5px 0;
+}
+
+.instructor-item__name {
+    font: 900 24px/1.2 Catamaran;
+    letter-spacing: 0.24px;
+    color: #2f2f2f;
+    margin: 0;
+}
+
+/* Секция о школе */
+.about {
+    background: url("../img/about-bg.jpg") no-repeat top center / cover;
+    padding-top: 229px;
+    padding-bottom: 307px;
+}
+
+.about__block {
+    padding-right: 466px;
+}
+
+.about__title {
+    margin-top: 0;
+    margin-bottom: 60px;
+}
+
+.about__description {
+    letter-spacing: 0.18px;
+    margin-bottom: 80px;
+}
+
+/* Список статистики */
+.statistics-list {
+    margin: 0;
+
+    display: flex;
+    flex-flow: column-reverse wrap;
+    max-height: 90px;
+}
+
+.statistic-list__value {
+    font: 900 64px/1 Catamaran;
+    color: #ff660d;
+    letter-spacing: 0.64px;
+    margin: 0;
+}
+
+.statistic-list__label {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0.18px;
+    text-transform: uppercase;
+}
+
+/* Секция отзывов */
+.testimonials {
+    text-align: center;
+    padding: 162px 0;
+}
+
+/* Список отзывов */
+.testimonials__title {
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+
+.testimonials-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Блок отзыва */
+.testimonials-item {
+    padding: 0 220px;
+}
+
+.testimonials-item__photo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 23px;
+}
+
+.testimonials-item__photo::before,
+.testimonials-item__photo::after {
+    display: table;
+    width: 50px;
+    height: 36px;
+    transform: translateY(16px);
+}
+
+.testimonials-item__photo::before {
+    content: url("../img/quote-left.png");
+}
+
+.testimonials-item__photo::after {
+    content: url("../img/quote-right.png");
+}
+
+.testimonials-item__img {
+    margin: 0 13px;
+    border-radius: 50%;
+    vertical-align: top;
+}
+
+.testimonials-item__author {
+    font-family: Catamaran;
+    font-weight: 900;
+    font-size: 18px;
+    color: #2f2f2f;
+    text-transform: uppercase;
+    margin: 0 0 42px 0;
+}
+
+/* Пагинация отзывов */
+.slider-points {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+.slider-points__item {
+    width: 13px;
+    height: 13px;
+    background-color: #d1d8df;
+    border-radius: 50%;
+    margin: 0 9px;
+}
+
+.slider-points__item_active {
+    background-color: #ff630b;
+}
+
+/* Подвал сайта */
+.footer {
+    display: flex;
+    overflow: hidden;
+}
+
+/* Контакты */
+.contact {
+    background-color: #2f2f2f;
+    color: #d2d2d2;
+    padding: 100px 120px;
+}
+
+.contact__title {
+    margin-bottom: 62px;
+    margin-top: 0;
+}
+
+.contact__list {
+    margin-bottom: 73px;
+    margin-top: 0;
+}
+
+.contact__socials {
+    margin: 0;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0 0 0 12px;
+}
+
+.contact-list__item {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.contact-list__item::before {
+    display: table;
+    width: 18px;
+    height: 18px;
+    margin-right: 16px;
+}
+
+.contact-list__item-tel::before {
+    content: url("../img/icon-tel.png");
+}
+
+.contact-list__item-address::before {
+    content: url("../img/icon-address.png");
+}
+
+.contact-list__item-mail::before {
+    content: url("../img/icon-mail.png");
+}
+
+.contact-list__item-time::before {
+    content: url("../img/icon-time.png");
+}
+
+/* Социальные сети */
+.socials-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.socials-list__item {
+    margin-right: 37px;
+}
+
+.socials-list__img {
+    vertical-align: middle;
+}
+
+/* Карта */
+.map__img {
+    height: 100%;
+    max-width: initial;
+}

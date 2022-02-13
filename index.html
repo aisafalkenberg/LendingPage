@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ski & Snowboard School</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Первый блок -->
+        <div class="home" id="home">
+            <!-- Шапка -->
+            <header class="header container-layout">
+                <!-- Логотип -->
+                <img src="img/logo.png" alt="Ski & Snowboard School logo" class="header__logo logo">
+
+                <!-- Блок навигации -->
+                <nav class="header__nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a href="#home" class="nav-list__link">Home</a></li>
+                        <li class="nav-list__item"><a href="#offer" class="nav-list__link">What We Offer</a></li>
+                        <li class="nav-list__item"><a href="#gallery" class="nav-list__link">Gallery</a></li>
+                        <li class="nav-list__item"><a href="#about" class="nav-list__link">About Us</a></li>
+                        <li class="nav-list__item"><a href="#testimonials" class="nav-list__link">Testimonials</a></li>
+                        <li class="nav-list__item"><a href="#contact" class="nav-list__link">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Промо-блок -->
+            <section class="promo">
+                <!-- Блок с заголовком -->
+                <div class="promo__heading container">
+                    <p class="promo__subtitle">Ski & Snowboard School</p>
+                    <h1 class="promo__title">Stay & Ski</h1>
+                </div>
+
+                <!-- Блок с описанием -->
+                <div class="promo__description">
+                    <div class="container">
+                        <p class="promo__text">The countdown to ski season has begun! So, it is high<br>
+                            time to improve your skills to have maximum fun this winter</p>
+                        <p class="promo__button">
+                            <button class="btn btn_promo">Online Booking</button>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Секция офферов -->
+        <section class="offer container" id="offer">
+            <!-- Заголовок -->
+            <h2 class="section-title offer__title">What We Offer</h2>
+            <!-- Текстовое содержимое -->
+            <p class="offer__description">Skiing and snowboarding still rank among the undisputed winter sport highlights for all ages and ability levels.<br>
+                The perfectly groomed ski slopes makes a real heaven for skiers and riders. Our professional ski and snowboard<br>
+                instructors can show you all the little details while improving your skiing techniques and riding skills.
+            </p>
+
+            <!-- Список офферов -->
+            <ul class="offer-list">
+                <li class="offer-list__item offer-item">
+                    <!-- Изображение -->
+                    <img src="img/offer-1.svg" alt="Private lessons for beginners" class="offer-item__img" width="184">
+                    <!-- Подзаголовок -->
+                    <p class="offer-item__subtitle">New to sking?</p>
+                    <!-- Заголовок -->
+                    <h3 class="offer-item__title">Private lessons<br>for beginners</h3>
+                    <!-- Кнопка -->
+                    <button class="btn btn_offer">From $250</button>
+                </li>
+
+                <li class="offer-list__item offer-item">
+                    <!-- Изображение -->
+                    <img src="img/offer-2.svg" alt="Group lessons for beginners" class="offer-item__img" width="133">
+                    <!-- Подзаголовок -->
+                    <p class="offer-item__subtitle">Need a crew?</p>
+                    <!-- Заголовок -->
+                    <h3 class="offer-item__title">Group lessons<br>for beginners</h3>
+                    <!-- Кнопка -->
+                    <button class="btn btn_offer">From $150</button>
+                </li>
+
+                <li class="offer-list__item offer-item">
+                    <!-- Изображение -->
+                    <img src="img/offer-3.svg" alt="Advanced group lessons" class="offer-item__img" width="237">
+                    <!-- Подзаголовок -->
+                    <p class="offer-item__subtitle">Wanna more?</p>
+                    <!-- Заголовок -->
+                    <h3 class="offer-item__title">Advanced group<br>lessons</h3>
+                    <!-- Кнопка -->
+                    <button class="btn btn_offer">From $450</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Секция галереи -->
+        <section class="gallery" id="gallery">
+            <!-- Заголовок секции -->
+            <h2 class="section-title gallery__title vhidden">Gallery</h2>
+
+            <!-- Список фотографий -->
+            <ul class="gallery-list">
+                <li class="gallery-list__item"><img src="img/photo-1.jpg" alt="Photo 1" class="gallery-list__photo"></li>
+                <li class="gallery-list__item"><img src="img/photo-2.jpg" alt="Photo 2" class="gallery-list__photo"></li>
+                <li class="gallery-list__item"><img src="img/photo-3.jpg" alt="Photo 3" class="gallery-list__photo"></li>
+                <li class="gallery-list__item"><img src="img/photo-4.jpg" alt="Photo 4" class="gallery-list__photo"></li>
+                <li class="gallery-list__item"><img src="img/photo-5.jpg" alt="Photo 5" class="gallery-list__photo"></li>
+                <li class="gallery-list__item"><img src="img/photo-6.jpg" alt="Photo 6" class="gallery-list__photo"></li>
+                <li class="gallery-list__item"><img src="img/photo-7.jpg" alt="Photo 7" class="gallery-list__photo"></li>
+            </ul>
+        </section>
+
+        <!-- Секция инструкторов -->
+        <section class="instructor container" id="instructor">
+            <!-- Заголовок -->
+            <h2 class="section-title instructor__title">Meet our crew</h2>
+
+            <!-- Список инструкторов -->
+            <ul class="instructor-list">
+                <li class="instructor-list__item instructor-item">
+                    <!-- Фотография инструктора -->
+                    <img src="img/instructor-1.jpg" alt="Instructor Jamie Garcia" class="instructor-item__img">
+                    <!-- Должность -->
+                    <p class="instructor-item__post">Instructor</p>
+                    <!-- Имя -->
+                    <h3 class="instructor-item__name">Jamie Garcia</h3>
+                </li>
+
+                <li class="instructor-list__item instructor-item">
+                    <!-- Фотография инструктора -->
+                    <img src="img/instructor-2.jpg" alt="Instructor James Billings" class="instructor-item__img">
+                    <!-- Должность -->
+                    <p class="instructor-item__post">Instructor</p>
+                    <!-- Имя -->
+                    <h3 class="instructor-item__name">James Billings</h3>
+                </li>
+
+                <li class="instructor-list__item instructor-item">
+                    <!-- Фотография инструктора -->
+                    <img src="img/instructor-3.jpg" alt="Instructor Peter Colins" class="instructor-item__img">
+                    <!-- Должность -->
+                    <p class="instructor-item__post">Instructor</p>
+                    <!-- Имя -->
+                    <h3 class="instructor-item__name">Peter Colins</h3>
+                </li>
+
+                <li class="instructor-list__item instructor-item">
+                    <!-- Фотография инструктора -->
+                    <img src="img/instructor-4.jpg" alt="Instructor Amanda Lee" class="instructor-item__img">
+                    <!-- Должность -->
+                    <p class="instructor-item__post">Instructor</p>
+                    <!-- Имя -->
+                    <h3 class="instructor-item__name">Amanda Lee</h3>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Секция о школе -->
+        <section class="about" id="about">
+            <div class="container about__block">
+
+                <!-- Заголовок -->
+                <h2 class="section-title about__title">Mountain snowboard school</h2>
+
+                <!-- Текстовое содержимое -->
+                <div class="about__description">
+                    <p>We’re not saying Snow Mountain has special powers, but a lot of magical things do happen here. The slopes on Bald and Dollar mountains enjoy a nearly lift line–free existence all winter long, not to mention a nearly cloud-free one.</p>
+                    <p>To those who wish to experience the best holiday time ever, we are excited to offer unlimited fun on the slopes, homey cosiness, wonderful views and snow activities. All this selection is presented in a great variety for any taste, age and skill. We are looking forward to seeing you in Snow Mountain ski resort at new season!</p>
+                </div>
+
+                <!-- Список статистики -->
+                <dl class="statistics-list">
+                    <dt class="statistic-list__label">Happy clients</dt>
+                    <dd class="statistic-list__value">1600</dd>
+
+                    <dt class="statistic-list__label">Professional awards</dt>
+                    <dd class="statistic-list__value">18</dd>
+
+                    <dt class="statistic-list__label">Reached tops</dt>
+                    <dd class="statistic-list__value">213</dd>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Секция отзывов -->
+        <section class="testimonials container" id="testimonials">
+            <!-- Заголовок -->
+            <h2 class="section-title testimonials__title">Testimonials</h2>
+
+            <!-- Список отзывов -->
+            <ul class="testimonials-list testimonials__list">
+                <li class="testimonials-list__item">
+                    <article class="testimonials-item">
+                        <!-- Блок изображения -->
+                        <div class="testimonials-item__photo">
+                            <!-- Фотография -->
+                            <img src="img/review-1.jpg" alt="Alexa Smith" class="testimonials-item__img">
+                        </div>
+                        <!-- Имя -->
+                        <h3 class="testimonials-item__author">Alexa Smith</h3>
+                        <!-- Текст отзыва -->
+                        <p class="testimonials-item__description">Nulla metus metus ullamcorper vel tincidunt sed euismod nibh Quisque volutpat condimentum velit class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+                    </article>
+                </li>
+            </ul>
+
+            <!-- Пагинация слайдера -->
+            <ul class="slider-points">
+                <li class="slider-points__item slider-points__item_active"></li>
+                <li class="slider-points__item"></li>
+                <li class="slider-points__item"></li>
+                <li class="slider-points__item"></li>
+                <li class="slider-points__item"></li>
+            </ul>
+        </section>
+
+        <!-- Подвал сайта -->
+        <footer class="footer">
+            <!-- Контакты -->
+            <section class="contact" id="contact">
+                <h2 class="section-title section-title_contact contact__title">Contact us</h2>
+
+                <!-- Список контактов -->
+                <ul class="contact__list contact-list">
+                    <li class="contact-list__item contact-list__item-tel">+43 662 123456</li>
+                    <li class="contact-list__item contact-list__item-address">Paracelsusstraße 26, 5020<br>Salzburg, Austria</li>
+                    <li class="contact-list__item contact-list__item-mail">inbox@mountain.com</li>
+                    <li class="contact-list__item contact-list__item-time">Open hours: 8.00 am – 10.00 pm Monday - Sunday</li>
+                </ul>
+
+                <!-- Список социальных сетей -->
+                <ul class="contact__socials socials-list">
+                    <li class="socials-list__item">
+                        <a href="#" class="socials-list__link" title="Twitter">
+                            <img src="img/icon-twitter.png" alt="Twitter" class="socials-list__img">
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a href="#" class="socials-list__link" title="Facebook">
+                            <img src="img/icon-facebook.png" alt="Facebook" class="socials-list__img">
+                        </a>
+                    </li>
+                    <li class="socials-list__item">
+                        <a href="#" class="socials-list__link" title="Instagram">
+                            <img src="img/icon-instagram.png" alt="Instagram" class="socials-list__img">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Карта -->
+            <section class="map">
+                <!-- Заголовок секции -->
+                <h2 class="section-title vhidden">Fare map</h2>
+                <img src="img/map.png" alt="Paracelsusstraße 26, 5020 Salzburg, Austria" class="map__img">
+            </section>
+        </footer>
+    </div>
+</body>
+</html>
